@@ -1,3 +1,4 @@
+from typing import Any
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -29,5 +30,5 @@ def load_data() -> Tuple[list, list, int]:
     return X, y, input_dim
 
 
-def load_keras_model():
+def load_keras_model() -> Any:
     return load_model(MODEL_PATH)
